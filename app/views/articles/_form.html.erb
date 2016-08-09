@@ -1,0 +1,8 @@
+<%= form_for @article do |f| %>
+  <%= label_tag(:title, "article") %>
+  <%= f.text_field :title, placeholder: "Here put your article" %>
+  <%= label_tag(:content, "content") %>
+  <%= f.text_area :content, placeholder: "Here put your content" %>
+  <%= f.submit %>
+<% end %>
+
